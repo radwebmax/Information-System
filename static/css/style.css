@@ -1,0 +1,503 @@
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-size: 30px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+table {
+  width: 100%;
+  table-layout: fixed;
+}
+
+.tbl-header {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.tbl-content {
+  height: 300px;
+  overflow-x: auto;
+  margin-top: 0px;
+  box-shadow: 0 0 5px #ff0000b3;
+}
+
+th {
+  padding: 20px 15px;
+  text-align: left;
+  font-weight: 500;
+  font-size: 12px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+td {
+  padding: 15px;
+  text-align: left;
+  vertical-align: middle;
+  font-weight: 300;
+  font-size: 12px;
+  color: #fff;
+  border-bottom: solid 1px rgba(255, 255, 255, 0.1);
+}
+
+.input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.w70 {
+  max-width: 70vw;
+  width: 90%;
+  margin: 0 0 20px 0;
+  height: 30px;
+  border-radius: 50px;
+  padding-left: 15px;
+  border: none;
+}
+
+.button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 25px;
+  font-size: 16px;
+  box-shadow: 0 0 5px red;
+}
+
+.button:hover {
+  transition: all 0.4s ease;
+  transform: scale(1.1);
+  background: red;
+}
+
+.padding10 {
+  padding: 10px;
+}
+
+input.w70:active,
+input.w70:focus {
+  border: none;
+  outline: none;
+}
+
+/* demo styles */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+  background: -webkit-linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  font-family: 'Montserrat', sans-serif;
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+  padding: 0 20px;
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+section {
+  margin: 50px;
+}
+
+
+/* follow me template */
+.made-with-love {
+  margin-top: 40px;
+  padding: 10px;
+  clear: left;
+  text-align: center;
+  font-size: 10px;
+  font-family: arial;
+  color: #fff;
+}
+
+.made-with-love i {
+  font-style: normal;
+  color: #F50057;
+  font-size: 14px;
+  position: relative;
+  top: 2px;
+}
+
+.made-with-love a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.made-with-love a:hover {
+  text-decoration: underline;
+}
+
+
+/* for custom scrollbar for webkit browser*/
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(255, 255, 255);
+}
+
+::-webkit-scrollbar-thumb {
+  -webkit-box-shadow: inset 0 0 6px rgb(255, 255, 255);
+}
+
+.back-btn {
+  background: none;
+  outline: none;
+  border: none;
+  font-size: 16px;
+  align-items: center;
+  display: flex;
+}
+
+.back-btn:hover {
+  background: #9d999966;
+}
+
+.formatted_output {
+  border: 1px solid white;
+  padding: 0 20px;
+  background: #ffffff40;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+
+}
+
+.formatted_output p {
+  /* width: 25%; */
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  padding: 10px;
+  background: #ffffff52;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#admin-wrapper,
+#user-wrapper {
+  display: none;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  font-size: 40px;
+}
+
+.default-p {
+  text-align: center;
+  color: white;
+}
+
+section#login {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.fake-login,
+.real-registration {
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
+  background: rgba(255, 255, 255, 0.3);
+  width: 300px;
+  padding: 25px 15px;
+  border-radius: 10px;
+}
+
+.fake-login label,
+.fake-form label,
+.real-registration label,
+.real-form label {
+  font-size: 19px;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.fake-login input,
+.fake-form input:not(.button),
+.fake-form select,
+.real-registration input:not(button),
+.real-form select,
+.real-form input:not(.button) {
+  background: #ffffff8c;
+  outline: none;
+  color: #ff7600;
+  border: 1px solid #00bcd4;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.fake-login input:focus,
+.fake-form input:not(.button):focus,
+.fake-form select:focus,
+.real-registration input:not(button):focus,
+.real-form input:not(.button):focus,
+.real-form select:focus {
+  box-shadow: 0 0 10px #00bcd4;
+  transition: all .3s ease-in-out;
+}
+
+.login-submit,
+.button.user-submit,
+.registration-submit,
+.user-update {
+  background: #00bcd4;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  box-shadow: none !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#login.disabled {
+  display: none;
+}
+
+#admin-wrapper.active,
+#user-wrapper.active {
+  display: block;
+}
+
+.table-wrapper {
+  display: none;
+}
+
+.table-wrapper.show {
+  display: block;
+}
+
+.show-all__wrapper {
+  display: flex;
+  width: 50%;
+  align-items: flex-end;
+  margin-top: 20px;
+  flex-direction: column;
+  border-left: 1px solid #ffffff63;
+}
+
+.input.admin-form {
+  padding: 20px 0;
+}
+
+button.disabled {
+  display: none;
+}
+
+p.error {
+  font-size: 12px;
+  margin: 10px 0 0;
+  color: red;
+  opacity: 0;
+}
+
+.error.visible {
+  opacity: 1;
+  transition: opacity .3s ease-in;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  border: 1px solid white;
+  padding: 5px;
+  background: rgb(228 220 220 / 48%);
+  border-radius: 10px;
+}
+
+.log-out {
+  background: none;
+  border: none;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.log-out svg {
+  margin-right: 5px;
+  height: 20px;
+}
+
+.user-nav {
+  justify-content: space-between;
+}
+
+.hi-user {
+  text-transform: capitalize;
+}
+
+.fake-form,
+.real-form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
+  background: rgba(255, 255, 255, 0.3);
+  width: 48%;
+  padding: 25px 15px;
+  border-radius: 10px;
+}
+
+input.w70.user-input {
+  display: none;
+}
+
+input.button.user-submit {
+  margin-top: 10px;
+  width: 100%;
+}
+
+.response-nav {
+  margin-top: 20px;
+}
+
+.for-services {
+  flex-direction: column;
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  margin-right: 3px;
+}
+
+.admin-dashboard {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  background: #ffffff40;
+  padding: 30px 15px;
+  border-radius: 10px;
+}
+
+.input.admin-form {
+  width: 50%;
+  display: flex;
+  align-items: flex-start;
+}
+
+.show-all__wrapper button {
+  margin-bottom: 15px;
+  max-width: 300px;
+}
+
+.new_account {
+  color: white;
+  margin: 15px 0 5px 0;
+}
+
+.new_account span {
+  color: #ff7600;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.auth-forms-wrapper {
+  display: flex;
+  position: relative;
+}
+
+.real-registration.disabled,
+.fake-login.disabled {
+  display: none;
+}
+
+button.registration-submit.disabled {
+  opacity: .5;
+  cursor: no-drop;
+}
+
+#successAlert {
+  margin: 10px 0 0 0;
+  color: #235223;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 0;
+  background: #57e35785;
+  border: 2px solid #235223;
+}
+
+.user-forms__wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+}
+
+.hidden-label {
+  display: none;
+}
+
+.hidden-label.active {
+  display: flex !important;
+}
+
+.hidden-label input {
+  margin-top: 10px;
+}
+
+select {
+  font-weight: 600;
+}

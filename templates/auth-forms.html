@@ -1,0 +1,29 @@
+<div class="auth-forms-wrapper">
+    <div class="fake-login">
+        <h2>Login</h2>
+        <label>Username</label>
+        <input type="text" name="username-login" placeholder="Username" autofocus>
+        <label>Password</label>
+        <input type="password" name="password-login" placeholder="Password" >
+        
+        <p class="new_account">Don't have an account? <span>Create it</span> </p>
+        <button class="login-submit">Submit</button>
+        <p class="error">Please provide valid login or password</p>
+    </div>
+    <form class="real-registration disabled">
+        <h2>Sign Up</h2>
+        <label>Fullname</label>
+        <input type="text" class="form-control" name="fullname" id="fullname" placeholder="Fullname" required autofocus>
+        <label>Username</label>
+        <input type="text" class="form-control" name="username" id="username" placeholder="Your Username" required>
+        <label>Email</label>
+        <input type="email" class="form-control" name="email" id="email" placeholder="Email Address" required>
+        <label>Password</label>
+        <input type="password" class="form-control" name="password" id="password" placeholder="Password" required>
+
+        <p class="new_account login-back">Already have an account? <span>Login</span> </p>
+        <button class="registration-submit">Submit <img id='loading' style="display:none;margin-left: 10px;width: 25px;" src="{{ url_for('static', filename='img/loader.gif') }}"/></button>
+        <div id="successAlert" class="alert alert-success" role="alert" style="display:none;">Registered successfull</div>
+        <div id="errorAlert" class="alert alert-danger" role="alert" style="display:none;">Something went wrong, please reload the page</div>
+    </form>
+</div>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Інформаційна система обліку сплати за послуги кабельного телебачення</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/style.css') }}">
+    <link rel="shortcut icon" href="../static/img/favicon.ico" type="image/png">
+
+</head>
+
+<body>
+
+    <section id="login">
+
+        <h1>Welcome to our Smart System!</h1>
+        <p class='default-p'>Please, provide your credentials to view your dashboard</p>
+
+        {% include 'auth-forms.html' %}
+
+    </section>
+    <!-- Template for admin -->
+    <section id="admin-wrapper">
+
+        {% include 'admin-nav.html' %}
+        {% include 'admin-dashboard.html' %}
+
+        <!-- All tables -->
+        <div class="table-wrapper">
+            {% include 'admin-all-table.html' %}
+        </div>
+    </section>
+
+    <!-- Template for user -->
+    <section id="user-wrapper">
+
+        {% include 'user-nav.html' %}
+
+        <div class="user-forms__wrapper">
+            {% include 'user-fake-form.html' %}
+            {% include 'user-real-form.html' %}
+        </div>
+
+
+    </section>
+
+    <script src="{{ url_for('static',filename='js/main.js') }}"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="{{ url_for('static',filename='js/ajax-forms.js') }}"></script>
+
+</body>
+
+</html>

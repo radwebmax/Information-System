@@ -1,0 +1,39 @@
+
+<form class="real-form">
+    <label><h2 class="padding10">What do you want to change today?</h2></label>
+
+    <label>Select needed service</label>
+    <select id="real-services__select">
+        <option value="Update full name">Update full name</option>
+        <option value="Make payment">Make payment</option>
+        <option value="Prolong contract">Prolong contract</option>
+        <option value="Change address registration">Change address registration</option>
+    </select>
+    
+    <label>Enter your fullname</label>
+    <input type="text" name="user-fullname" id='user-fullname' placeholder='Fullname' required >
+
+    <label class="hidden-label hidden-fullname">Enter your new fullname
+        <input type="text" placeholder='New fullname' id='user-new-fullname'>
+    </label>
+    
+    <label class="hidden-label hidden-sum">Enter your payment sum
+        <input type="text" placeholder='100' id='payment-sum'>
+    </label>
+
+    <label class="hidden-label hidden-date">Enter new contract date 
+        <input type="date" placeholder='22.01.2021' id='prolong-date'>
+    </label>
+
+     <label class="hidden-label hidden-number">Enter new contract date
+        <input type="text" placeholder='30000005' id='contract-number'>
+     </label>
+    
+    <label class="hidden-label hidden-address">Enter your new address
+        <input type="text" placeholder='Kiev, Pushkina St.' id='new-adress'>
+    </label>
+
+    <!--Submit-->
+    <input class="button user-update" type="submit" value="Submit">
+    <div id="successAlert" class="alert alert-success" role="alert" style="display:none;">Request successfull</div>
+</form>

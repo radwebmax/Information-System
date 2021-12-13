@@ -1,0 +1,38 @@
+<div class="fake-form">
+    <label><h2 class="padding10">What do you want to check today?</h2></label>
+
+    <label for="user-name">Enter your name</label>
+    <input type="text" name="user-name" placeholder='Name'>
+
+    <label for="user-surname">Enter your surname</label>
+    <input type="text" name="user-surname" placeholder='Surname'>
+
+    <label for="user-patronymic">Enter your patronymic</label>
+    <input type="text" name="user-patronymic" placeholder='Patronymic'>
+
+    <label for="field">What do you want to check?</label>
+    <select name="field" id='service_select'>
+        <option value="Contract id">Contract id</option>
+        <option value="Contract validity">Contract validity</option>
+        <option value="Package of services I use">Package of services I use</option>
+        <option value="Info about package">Info about package</option>
+        <option value="Show all packages">Show all packages</option>
+    </select>
+
+    <div class="for-services" style="display: none;">
+        <label for="servies" >Enter package name</label>
+        <select name="package_name" id="package_name">
+            <option value="UA новини">UA новини</option>
+            <option value="Преміум+">Преміум+</option>
+            <option value="VIP HD+">VIP HD+</option>
+            <option value='ALL-TV"Стартовий"'>ALL-TV"Стартовий"</option>
+            <option value='ALL-TV"ALL Inclusive"'>ALL-TV"ALL Inclusive"</option>                
+        </select>
+    </div>
+
+
+    <form class="input user-form" action="" method="post">
+        <input class="w70 user-input" type="text" name="command" placeholder="SELECT * FROM ...">
+        <input class="button user-submit" type="submit" value="Submit">
+    </form>
+</div>
